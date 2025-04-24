@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TopNavbar from "./components/TopNavbar";
+import MatrixBackground from "./components/MatrixBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
-        <TopNavbar />
-        <main className="flex-grow">
-          {children}
-        </main>
+      <body className={`${inter.className} bg-black`}>
+        <MatrixBackground />
+        <div className="relative z-10">
+          <TopNavbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
