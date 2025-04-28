@@ -37,6 +37,7 @@ export default function Certifications() {
                 Banking & Finance
               </h2>
               <div className="space-y-6">
+                {/* JPMorgan Chase */}
                 <div className="flex items-start group">
                   <div className="relative w-12 h-12 mr-4 flex-shrink-0">
                     <Image
@@ -70,6 +71,7 @@ export default function Certifications() {
                     </a>
                   </div>
                 </div>
+                {/* Goldman Sachs */}
                 <div className="flex items-start group">
                   <div className="relative w-12 h-12 mr-4 flex-shrink-0">
                     <Image
@@ -103,6 +105,7 @@ export default function Certifications() {
                     </a>
                   </div>
                 </div>
+                {/* Bloomberg */}
                 <div className="flex items-start group">
                   <div className="relative w-12 h-20 mr-4 flex-shrink-0">
                     <Image
@@ -133,8 +136,9 @@ export default function Certifications() {
                 Educational
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start group">
-                  <div className="relative w-12 h-12 mr-4 flex-shrink-0">
+                {/* MIT Microeconomics */}
+                <div className="flex flex-col md:flex-row items-center md:items-start group">
+                  <div className="relative w-12 h-12 mr-4 mb-2 md:mb-0 flex-shrink-0">
                     <Image
                       src="/images/logos/mit.png"
                       alt="MIT Logo"
@@ -142,7 +146,7 @@ export default function Certifications() {
                       className="object-contain"
                     />
                   </div>
-                  <div>
+                  <div className="text-center md:text-left w-full break-words">
                     <h3 className="text-xl font-semibold text-white">14.01x: AP® Microeconomics</h3>
                     <p className="text-gray-400">MIT Sloan School of Management · Issued Jun 2020</p>
                     <p className="text-gray-300 mt-2">Credential ID: 924eb50728dc441d98a2a3c8dde074fc</p>
@@ -166,8 +170,9 @@ export default function Certifications() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start group">
-                  <div className="relative w-12 h-12 mr-4 flex-shrink-0">
+                {/* MIT Python */}
+                <div className="flex flex-col md:flex-row items-center md:items-start group">
+                  <div className="relative w-12 h-12 mr-4 mb-2 md:mb-0 flex-shrink-0">
                     <Image
                       src="/images/logos/mit.png"
                       alt="MIT Logo"
@@ -175,7 +180,7 @@ export default function Certifications() {
                       className="object-contain"
                     />
                   </div>
-                  <div>
+                  <div className="text-center md:text-left w-full break-words">
                     <h3 className="text-xl font-semibold text-white">Introductory Python</h3>
                     <p className="text-gray-400">Massachusetts Institute of Technology · Issued Aug 2018</p>
                     <p className="text-gray-300 mt-2">Credential ID: f1d786db999349548158b86357a3d474</p>
@@ -214,6 +219,7 @@ export default function Certifications() {
                 Music
               </h2>
               <div className="space-y-6">
+                {/* Trinity College London */}
                 <div className="flex items-start group">
                   <div className="relative w-12 h-12 mr-4 flex-shrink-0">
                     <Image
