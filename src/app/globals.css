@@ -36,4 +36,12 @@ html {
 
 .navbar-link-contact {
   @apply bg-black border border-white text-white hover:bg-gray-900 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+}
+
+.navbar-link-mobile {
+  @apply text-gray-300 hover:text-white px-4 py-3 text-base font-medium transition-colors duration-200 block;
+}
+
+.navbar-link-mobile.navbar-link-active {
+  @apply text-white bg-gray-800/50;
 } 

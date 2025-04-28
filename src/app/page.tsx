@@ -16,7 +16,7 @@ export default function Home() {
             Sahejveer Singh Kumar
           </h1>
           <p className="text-2xl md:text-3xl text-gray-300">
-            Software Engineer & Problem Solver
+            Software Engineer & Quantitative Trader
           </p>
         </motion.div>
       </section>
