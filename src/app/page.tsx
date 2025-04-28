@@ -12,7 +12,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative z-10"
         >
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-blue-600 to-green-500">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-300 to-gray-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] leading-[1.2] pb-2">
             Sahejveer Singh Kumar
           </h1>
           <p className="text-2xl md:text-3xl text-gray-300">

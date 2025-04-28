@@ -7,31 +7,14 @@ export default function Education() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0 z-0"
-        >
-          <Image
-            src="/images/education-bg.jpg"
-            alt="Education Background"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80" />
-        </motion.div>
-        
+      <section className="relative h-[40vh] flex items-center justify-center pt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
           className="relative z-10 text-center max-w-4xl mx-auto px-4"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-blue-600 to-green-500">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-300 to-gray-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
             Education
           </h1>
           <p className="text-xl md:text-2xl text-gray-300">Bachelor of Computing with Distinction</p>
@@ -39,7 +22,7 @@ export default function Education() {
       </section>
 
       {/* University Section */}
-      <section className="py-32 px-4 md:px-8">
+      <section className="py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -60,7 +43,7 @@ export default function Education() {
             </div>
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-gray-300">
                   University of Guelph
                 </h2>
                 <p className="text-xl text-gray-400">Bachelor of Computing with distinction | Aug. 2019 - Aug. 2023</p>
@@ -125,7 +108,7 @@ export default function Education() {
       </section>
 
       {/* Daly College Section */}
-      <section className="py-32 px-4 md:px-8 bg-gray-900/30">
+      <section className="py-20 px-4 md:px-8 bg-gray-900/30">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -134,17 +117,26 @@ export default function Education() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 gap-12 items-center"
           >
-            {/* Text content on the left for Daly College */}
-            <div className="space-y-8 md:order-2">
+            <div className="relative h-[500px] rounded-2xl overflow-hidden group">
+              <Image
+                src="/images/daly-college.jpg"
+                alt="The Daly College Campus"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-700">
+                <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-blue-400">
                   The Daly College, Indore
                 </h2>
                 <p className="text-xl text-gray-400">Grade UKG-12 (CBSE) | 2006 - 2018</p>
               </div>
               <div className="space-y-6">
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                   viewport={{ once: true }}
@@ -167,7 +159,7 @@ export default function Education() {
                   </ul>
                 </motion.div>
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
                   viewport={{ once: true }}
@@ -203,17 +195,6 @@ export default function Education() {
                 </motion.div>
               </div>
             </div>
-            {/* Image on the right for Daly College */}
-            <div className="relative h-[500px] rounded-2xl overflow-hidden group md:order-1">
-              <Image
-                src="/images/daly-college.jpg"
-                alt="The Daly College Campus"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
           </motion.div>
         </div>
       </section>
@@ -228,7 +209,7 @@ export default function Education() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-600">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-gray-300">
               Technical Skills
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">

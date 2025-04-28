@@ -7,31 +7,14 @@ export default function Work() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0 z-0"
-        >
-          <Image
-            src="/images/work-bg.jpg"
-            alt="Work Background"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80" />
-        </motion.div>
-        
+      <section className="relative h-[40vh] flex items-center justify-center pt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
           className="relative z-10 text-center max-w-4xl mx-auto px-4"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-blue-600 to-green-500">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-300 to-gray-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
             Work Experience
           </h1>
           <p className="text-xl md:text-2xl text-gray-300">Building the future of banking software</p>
@@ -61,7 +44,7 @@ export default function Work() {
               </div>
               <div className="space-y-6">
                 <div>
-                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-600">
+                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-gray-300">
                     Software Engineer
                   </h2>
                   <p className="text-xl text-gray-400">Candescent · Permanent Full-time | Oct 2024 - Present</p>
@@ -89,7 +72,7 @@ export default function Work() {
               </div>
               <div className="space-y-6">
                 <div>
-                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-blue-400">
                     Software Engineer I
                   </h2>
                   <p className="text-xl text-gray-400">NCR Voyix Canada | Sept. 2023 - Present</p>
@@ -127,7 +110,7 @@ export default function Work() {
             >
               <div className="order-2 md:order-1 space-y-6">
                 <div>
-                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-600">
+                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-gray-300">
                     Front-End Software Developer
                   </h2>
                   <p className="text-xl text-gray-400">NCR Canada Corp. | Jan. 2023 - Aug. 2023</p>
@@ -185,7 +168,7 @@ export default function Work() {
               </div>
               <div className="space-y-6">
                 <div>
-                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-700">
+                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-blue-400">
                     Back-End Software Developer
                   </h2>
                   <p className="text-xl text-gray-400">NCR Canada Corp. | May 2022 - Sept. 2022</p>
@@ -223,7 +206,7 @@ export default function Work() {
             >
               <div className="order-2 md:order-1 space-y-6">
                 <div>
-                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                  <h2 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-gray-300">
                     Jr. Software Engineer
                   </h2>
                   <p className="text-xl text-gray-400">Ministry of Children, Community and Social Services | May 2021 - Dec. 2021</p>
